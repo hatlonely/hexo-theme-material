@@ -280,12 +280,13 @@ a {
     border: 1px solid #ddd;
 }
 #post-content table tr {
-    /*    display: table;*/
-
     background-color: #fff;
 }
 #post-content table tr:nth-child(2n) {
     background-color: #f8f8f8;
+}
+#post-content .highlight table tr {
+    background-color: inherit;
 }
 #post-content img {
     max-width: 100%;
@@ -390,8 +391,6 @@ a {
 }
 #post-content .gutter,
 #post-content .code {
-    /*  background: #f7f7f7;*/
-
     font-size: 13px;
     line-height: 19px;
     overflow: auto;
@@ -1838,7 +1837,7 @@ a {
     text-align: left;
     text-transform: none
 }
-.sidebar::-webkit-scrollbar-track {		
+.sidebar::-webkit-scrollbar-track {
     border-radius: 2px
 }
 .sidebar::-webkit-scrollbar {
@@ -1849,7 +1848,7 @@ a {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #BFBFBF;
-} 
+}
 .sidebar .sidebar-header {
     height: 158.13px;
     -webkit-transition: all .2s ease-in-out;
