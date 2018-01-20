@@ -1,0 +1,99 @@
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.highlight {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+td>pre>span>.comment,
+td>pre>span>.quote {
+  color: #998;
+  font-style: italic;
+}
+
+td>pre>span>.keyword,
+td>pre>span>.selector-tag,
+td>pre>span>.subst {
+  color: #333;
+  font-weight: bold;
+}
+
+td>pre>span>.number,
+td>pre>span>.literal,
+td>pre>span>.variable,
+td>pre>span>.template-variable,
+td>pre>span>.tag td>pre>span>.attr {
+  color: #008080;
+}
+
+td>pre>span>.string,
+td>pre>span>.doctag {
+  color: #d14;
+}
+
+td>pre>span>.title,
+td>pre>span>.section,
+td>pre>span>.selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+td>pre>span>.subst {
+  font-weight: normal;
+}
+
+td>pre>span>.type,
+td>pre>span>.class td>pre>span>.title {
+  color: #458;
+  font-weight: bold;
+}
+
+td>pre>span>.tag,
+td>pre>span>.name,
+td>pre>span>.attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+td>pre>span>.regexp,
+td>pre>span>.link {
+  color: #009926;
+}
+
+td>pre>span>.symbol,
+td>pre>span>.bullet {
+  color: #990073;
+}
+
+td>pre>span>.built_in,
+td>pre>span>.builtin-name {
+  color: #0086b3;
+}
+
+td>pre>span>.meta {
+  color: #999;
+  font-weight: bold;
+}
+
+td>pre>span>.deletion {
+  background: #fdd;
+}
+
+td>pre>span>.addition {
+  background: #dfd;
+}
+
+td>pre>span>.emphasis {
+  font-style: italic;
+}
+
+td>pre>span>.strong {
+  font-weight: bold;
+}
