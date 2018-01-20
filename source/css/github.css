@@ -12,6 +12,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   background: #f8f8f8;
 }
 
+#post-content .highlight table tr {
+    background-color: inherit;
+}
+
 td>pre>span>.comment,
 td>pre>span>.quote {
   color: #998;

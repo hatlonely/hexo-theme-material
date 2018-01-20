@@ -285,9 +285,6 @@ a {
 #post-content table tr:nth-child(2n) {
     background-color: #f8f8f8;
 }
-#post-content .highlight table tr {
-    background-color: inherit;
-}
 #post-content img {
     max-width: 100%;
     -moz-box-sizing: border-box;
