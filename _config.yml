@@ -122,8 +122,8 @@ qrcode:
 #    Prettify
 #        theme: # Available value in /source/css/prettify/[theme].min.css
 prettify:
-    enable: false
-    theme: "vibrant-ink"
+    enable: true
+    theme: "github-v2"
 
 #    Hanabi (https://github.com/egoist/hanabi)
 #        line_number: [true/false] # Show line number for code block
@@ -237,10 +237,10 @@ sidebar:
 # If you want to use gitment or gitalk,you should get the client_id and client_secret form https://github.com/settings/applications/new
 # If you want to use valine,you should get the app_id and app_key form https://leancloud.cn ,more setting please see https://valine.js.org
 comment:
-    use:
+    use: changyan
     shortname: # duoshuo or disqus shortname
-    changyan_appid:
-    changyan_conf:
+    changyan_appid: cytqzuE8P
+    changyan_conf: prod_248c118d28f4d6a371d8098fdcbd8c9e
     changyan_thread_key_type: path
     livere_data_uid:
     gitment_repo:   # git repo of the hexo
@@ -265,7 +265,7 @@ comment:
 # Available value:
 #     swiftype | google | local
 search:
-    use: google
+    use: local
     swiftype_key:
 
 # Analytics Systems
@@ -273,7 +273,7 @@ search:
 #     baidu | google | cnzz
 analytics:
     google_site_id:
-    baidu_site_id:
+    baidu_site_id: "633cb5fd05b598aceeda727f031fa7e4"
     cnzz_site_id:
 
 # Leancloud Views
