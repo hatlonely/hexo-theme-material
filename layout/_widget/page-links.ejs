@@ -40,7 +40,7 @@
     }
 
     .md-links-item {
-        background: #fff;
+        background: #FAFAFA;
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
         height: 72px;
         line-height: 15px;
@@ -55,12 +55,16 @@
     }
 
     .md-links li {
+        border-radius: 2px;
         width: 300px;
         float: left;
         list-style: none;
     }
 
     .md-links-item img {
+        border-radius: 50%;
+        height: 50px;
+        margin: 11px;
         float: left;
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 11px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
     }
@@ -89,12 +93,10 @@
 <ul class="md-links">
     <% if (site.data.links) { %>
         <% for (var i in site.data.links) { %>
-            <li class="md-links-item">
-                <a href="<%= site.data.links[i].link %>" title="<%= i %>" target="_blank">
-                    <img src="<%= site.data.links[i].avatar %>" alt="<%= i %>" height="72px"/>
-                    <span class="md-links-title"><%= i %></span><br />
-                    <span><%= site.data.links[i].descr %></span>
-                </a>
+            <li class="md-links-item" onclick="location='<%= site.data.links[i].link %>'">
+                <img src="<%= site.data.links[i].avatar %>" alt="<%= i %>" />
+                <span class="md-links-title"><%= i %></span><br />
+                <span><%= site.data.links[i].descr %></span>
             </li>
         <% } %>
     <% } %>
