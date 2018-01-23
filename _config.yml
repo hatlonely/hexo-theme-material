@@ -4,9 +4,9 @@
 
 # Head info
 head:
-    favicon: "/img/hatlonely.png"
-    high_res_favicon: "/img/hatlonely.png"
-    apple_touch_icon: "/img/hatlonely.png"
+    favicon: "/img/avatar/hatlonely4.png"
+    high_res_favicon: "/img/avatar/hatlonely4.png"
+    apple_touch_icon: "/img/avatar/hatlonely4.png"
     keywords:
     site_verification:
         google:
@@ -70,10 +70,10 @@ background:
 
 # Images Settings
 img:
-    logo: "/img/hatlonely4.png"
-    avatar: "/img/hatlonely4.png"
-    daily_pic: "/img/daily_pic1.jpg"
-    sidebar_header: "/img/sidebar_header.png"
+    logo: "/img/avatar/hatlonely4.png"
+    avatar: "/img/avatar/hatlonely4.png"
+    daily_pic: "/img/blog/landscape1.jpg"
+    sidebar_header: "/img/blog/house.png"
     random_thumbnail: "/img/random/material-"
     footer_image:
         #upyun_logo:
@@ -185,7 +185,7 @@ sns_share:
 sidebar:
     dropdown:
         Email Me:
-            link: "#"
+            link: "mailto:hatlonely@foxmail.com"
             icon: email
     homepage:
         use: true
