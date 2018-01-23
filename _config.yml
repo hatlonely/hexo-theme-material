@@ -161,7 +161,7 @@ sns:
     facebook: "https://www.facebook.com/facebook"
     twitter: "https://twitter.com/twitter"
     googleplus: "https://www.google.com/"
-    weibo:
+    weibo: http://weibo.com/hatlonely
     instagram:
     tumblr:
     github: "https://github.com/hatlonely"
