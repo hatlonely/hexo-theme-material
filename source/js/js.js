@@ -42,11 +42,6 @@ $(document).ready(function() {
         this.placeholder="";
     });
 
-    // Auto hidden share/tags popup block
-    $('#article-fuctions-share-button, #article-functions-viewtags-button').click(function() {
-        $('.is-visible').removeClass('is-visible');
-    });
-
     // Add 'fab' class to the PageNav <a>
     $('.fabs .prev, .fabs .next, .fabs .prev-content').addClass('fab');
 
