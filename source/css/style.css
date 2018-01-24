@@ -124,6 +124,9 @@ a {
     left: 0;
     bottom: 0;
 }
+#post-content a {
+    text-decoration: none;
+}
 #post-content h1,
 #post-content h2,
 #post-content h3,
