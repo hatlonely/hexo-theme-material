@@ -123,7 +123,9 @@ qrcode:
 #        theme: # Available value in /source/css/prettify/[theme].min.css
 prettify:
     enable: true
-    theme: "github-v2"
+    # github-v2 | github | atelier-seaside-dark | tranquil-heart | tomorrow-night-eighties
+    # hemisu-dark | atelier-lakeside-dark | atelier-forest-light | atelier-savanna-light |
+    theme: "tranquil-heart"
 
 #    Hanabi (https://github.com/egoist/hanabi)
 #        line_number: [true/false] # Show line number for code block
