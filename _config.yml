@@ -216,7 +216,7 @@ sidebar:
             divider: false
         友情链接:
             link: "/links"
-            icon: share
+            icon: link
             divider: false
     article_num:
         use: false
