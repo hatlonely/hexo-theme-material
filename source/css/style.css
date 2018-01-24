@@ -126,6 +126,7 @@ a {
 }
 #post-content a {
     text-decoration: none;
+    font-weight: normal;
 }
 #post-content a:hover {
     text-decoration: underline;
@@ -514,6 +515,10 @@ a {
     padding-top: 165px;
     margin: 0 auto;
     width: 100%;
+}
+.material-layout__content a {
+    text-decoration: none;
+    font-weight: normal;
 }
 @media screen and (max-width: 480px) {
     #scheme-Paradox .material-layout .material-layout__content {
