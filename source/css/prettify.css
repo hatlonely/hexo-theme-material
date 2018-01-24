@@ -12,7 +12,7 @@ pre{
     border-radius: 0;
 }
 
-#post-content ol,#post-content ul{
+#post-content pre ol,#post-content pre ul {
     padding-left: 51px;
     font-size: 1rem;
     margin: 0;
