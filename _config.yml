@@ -71,9 +71,9 @@ background:
 # Images Settings
 img:
     logo: "/img/avatar/hatlonely4.png"
-    avatar: "/img/avatar/hatlonely4.png"
+    avatar: "/img/avatar/hatlonely4_white.png"
     daily_pic: "/img/blog/landscape1.jpg"
-    sidebar_header: "/img/blog/house.png"
+    sidebar_header: "/img/blog/bridge.jpg"
     random_thumbnail: "/img/random/material-"
     footer_image:
         #upyun_logo:
