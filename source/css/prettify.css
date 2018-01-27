@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
 /* for color-themes-for-google-code-prettify */
-pre{
+pre {
     white-space: pre-wrap;
     word-break: break-all;
     word-wrap: break-word;
+    font-family: 'SF Mono', Menlo, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }
 
 #post-content .prettyprint{
