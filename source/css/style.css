@@ -33,6 +33,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     content: '';
+    -webkit-tap-highlight-color: transparent;
 }
 .fa,
 .material-icons {
