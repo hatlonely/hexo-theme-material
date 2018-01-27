@@ -1855,9 +1855,9 @@ a {
     background-color: #BFBFBF;
 }
 .sidebar .sidebar-header {
-    height: 158.13px;
+    height: 200px;
     -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out
+    transition: all .2s ease-in-out;
 }
 .sidebar .sidebar-header,
 .sidebar .sidebar-toggle {
@@ -1870,7 +1870,11 @@ a {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: 100%
+    background-size: cover;
+    background-position: 50% 50%;
+    background-origin: padding-box;
+    background-attachment: scroll;
+    box-sizing: border-box;
 }
 .sidebar .sidebar-header:hover .sidebar-toggle {
     opacity: 1
