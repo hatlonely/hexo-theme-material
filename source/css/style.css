@@ -134,7 +134,7 @@ a {
 #post-content h4,
 #post-content h5,
 #post-content h6 {
-    margin: 1em 0 15px;
+    margin: 1.2em 0 0.7em;
     padding: 0;
     font-weight: bold;
     line-height: 1.7;
@@ -185,15 +185,15 @@ a {
     font-size: inherit;
 }
 #post-content h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     border-bottom: 1px solid #ddd;
 }
 #post-content h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     border-bottom: 1px solid #eee;
 }
 #post-content h3 {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 #post-content h4 {
     font-size: 1.2em;
@@ -211,7 +211,7 @@ a {
 #post-content ol,
 #post-content dl,
 #post-content table {
-    margin: 15px 0;
+    margin: 0.7em 0;
 }
 #post-content hr {
     height: 0.25em;
@@ -699,9 +699,9 @@ a {
     text-decoration: none;
     font-weight: inherit
 }
-#scheme-Paradox .material-layout .mdl-card h3 {
+/*#scheme-Paradox .material-layout .mdl-card h3 {
     margin: 0
-}
+}*/
 #scheme-Paradox .material-layout .mdl-card h1 a,
 #scheme-Paradox .material-layout .mdl-card h2 a,
 #scheme-Paradox .material-layout .mdl-card h3 a,
