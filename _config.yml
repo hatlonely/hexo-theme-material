@@ -199,7 +199,7 @@ sidebar:
         divider: false
     categories:
         use: true
-        icon: chrome_reader_mode
+        icon: folder
         divider: false
     pages:
         时间轴:
