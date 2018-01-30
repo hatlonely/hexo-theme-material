@@ -34,10 +34,18 @@
         <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
             <!-- Author Avatar -->
             <div id="author-avatar">
-                <img src="<%= url_for(theme.img.avatar) %>" width="44px" height="44px" alt="<%= config.author %>'s avatar">
+                <% if (post.avatar && post.avatar.length) { %>
+                    <img src="<%= url_for(post.avatar) %>" width="44px" height="44px" alt="<%= post.author %>'s avatar">
+                <% } else { %>
+                    <img src="<%= url_for(theme.img.avatar) %>" width="44px" height="44px" alt="<%= config.author %>'s avatar">
+                <% } %>
             </div>
             <div>
-                <strong><%= config.author %></strong>
+                <% if (post.author && post.author.length) { %>
+                    <strong><%= post.author %></strong>
+                <% } else { %>
+                    <strong><%= config.author %></strong>
+                <% } %>
                 <span><%= date(post.date, 'MMM DD, YYYY') %></span>
             </div>
         </div>
