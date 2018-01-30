@@ -67,6 +67,16 @@
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
+                <% if (site.data.tags) { %>
+                    <% for (var i in site.data.tags) { %>
+                        <li>
+                            <a class="sidebar_archives-link" href="/tags/<%= site.data.tags[i] %>"> <%= site.data.tags[i] %>
+                                <span class="sidebar_archives-count"> <%- tag_count(site.data.tags[i]) %> </span>
+                            </a>
+                        </li>
+                    <% } %>
+                <% } %>
+                <!--
                 <li>
                 <%- list_categories({
                     show_count: true,
@@ -75,6 +85,7 @@
                     style: 'none',
                     separator: '</li><li>'
                 }) %>
+                -->
             </ul>
         </li>
         <% if(theme.sidebar.categories.divider === true) { %>
