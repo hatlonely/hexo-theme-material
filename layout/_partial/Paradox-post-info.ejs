@@ -2,11 +2,19 @@
 
     <!-- Author Avatar -->
     <div id="author-avatar">
-        <img src="<%- url_for(theme.img.avatar) %>" width="44px" height="44px" alt="Author Avatar"/>
+        <% if (page.avatar && page.avatar.length) { %>
+            <img src="<%= url_for(page.avatar) %>" width="44px" height="44px" alt="<%= page.author %>'s avatar">
+        <% } else { %>
+            <img src="<%- url_for(theme.img.avatar) %>" width="44px" height="44px" alt="Author Avatar"/>
+        <% } %>
     </div>
     <!-- Author Name & Date -->
     <div>
-        <strong><%= config.author %></strong>
+        <% if (page.author && page.author.length) { %>
+            <strong><%= page.author %></strong>
+        <% } else { %>
+            <strong><%= config.author %></strong>
+        <% } %>
         <span><%= date(page.date, 'MMM DD, YYYY') %></span>
     </div>
 
