@@ -198,8 +198,8 @@ sidebar:
         icon: inbox
         divider: false
     categories:
-        use: false
-        icon: chrome_reader_mode
+        use: true
+        icon: folder
         divider: false
     pages:
         时间轴:
