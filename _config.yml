@@ -72,8 +72,8 @@ background:
 img:
     logo: "/img/avatar/hatlonely12.png"
     avatar: "/img/avatar/hatlonely12.png"
-    daily_pic: "/img/blog/landscape1.jpg"
-    sidebar_header: "/img/blog/bridge.jpg"
+    daily_pic: "/img/thumbnail/landscape1.jpg"
+    sidebar_header: "/img/thumbnail/bridge.jpg"
     random_thumbnail: "/img/random/material-"
     footer_image:
         #upyun_logo:
