@@ -2,7 +2,7 @@
     <% if(theme.scheme === 'Paradox') { %>
         <%- page.content %>
         <!-- 增加点赞功能 by hatlonely -->
-        <div id="post-dolike" islike="false"><i id="post-dolike-thumb" class="material-icons">thumb_up</i></div>
+        <div id="post-dolike" islike="false"><i id="post-dolike-thumb" class="material-icons like-hover">thumb_up</i></div>
         <script>
             $(document).ready(function() {
                 $.ajax({
@@ -45,6 +45,8 @@
                         },
                         async: true
                     });
+
+                    return false;
                 });
             });
         </script>

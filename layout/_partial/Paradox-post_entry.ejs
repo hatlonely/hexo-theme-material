@@ -53,11 +53,11 @@
 
             <!-- 浏览和点赞功能 by hatlonely -->
             <i class="material-icons">remove_red_eye</i>&nbsp;
-            <span id="post-view-num-<%= idx %>">0</span>&nbsp;&nbsp;
-            <i class="material-icons">thumb_up</i>&nbsp;
+            <span id="post-view-num-<%= idx %>">0</span>&nbsp;&nbsp;&nbsp;
+            <i class="material-icons like-hover" id="post-like-thumb-<%= idx %>">thumb_up</i>&nbsp;
             <span id="post-like-num-<%= idx %>">0</span>&nbsp;&nbsp;
             <script>
-                $(document).ready(function(){
+                $(document).ready(function() {
                     $.ajax({
                         url: "<%= theme.comment_like.host %>/api/countview",
                         data: {
@@ -86,6 +86,54 @@
                             }
                         },
                         async: true
+                    });
+
+                    $.ajax({
+                        url: "<%= theme.comment_like.host %>/api/showlike",
+                        data: {
+                            title: "<%= post.title %>"
+                        },
+                        type: 'GET',
+                        dataType: 'JSON',
+                        success: function(res) {
+                            if (res.islike) {
+                                $('#post-like-thumb-<%= idx %>').css('color','#c4291c')
+                                $('#post-like-thumb-<%= idx %>').prop('islike', true)
+                            } else {
+                                $('#post-like-thumb-<%= idx %>').css("color","#758591");
+                                $('#post-like-thumb-<%= idx %>').prop('islike', false)
+                            }
+                        },
+                        async: true
+                    });
+
+                    $('#post-like-thumb-<%= idx %>').click(function() {
+                        num = $('#post-like-num-<%= idx %>').text()
+                        if ($('#post-like-thumb-<%= idx %>').prop('islike')) {
+                            url = "<%= theme.comment_like.host %>/api/dounlike";
+                            $('#post-like-thumb-<%= idx %>').css('color', '#758591');
+                            $('#post-like-thumb-<%= idx %>').prop('islike', false);
+                            num--
+                        } else {
+                            url = "<%= theme.comment_like.host %>/api/dolike";
+                            $('#post-like-thumb-<%= idx %>').css('color','#c4291c');
+                            $('#post-like-thumb-<%= idx %>').prop('islike', true);
+                            num++
+                        }
+                        $('#post-like-num-<%= idx %>').text(num)
+                        $.ajax({
+                            url: url,
+                            data: {
+                                title: "<%= post.title %>"
+                            },
+                            type: 'GET',
+                            dataType: 'JSON',
+                            success: function(res) {
+                            },
+                            async: true
+                        });
+
+                        return false;
                     });
                 });
             </script>

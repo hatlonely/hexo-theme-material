@@ -446,9 +446,13 @@ a {
     text-align: center;
 }
 
-#post-dolike > i.material-icons {
+#post-dolike-thumb {
     font-size: 36px;
     color: #758591;
+}
+
+.like-hover:hover {
+    cursor: pointer;
 }
 
 /****************/
