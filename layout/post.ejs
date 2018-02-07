@@ -50,3 +50,20 @@
         </div>
     </div>
 <% } %>
+
+<!-- 增加浏览功能 by hatlonely -->
+<script>
+    $(document).ready(function() {
+        $.ajax({
+            url: "<%= theme.comment_like.host %>/api/doview",
+            data: {
+                title: "<%= page.title %>"
+            },
+            type: 'GET',
+            dataType: 'JSON',
+            success: function(res) {
+            },
+            async: true
+        });
+    });
+</script>

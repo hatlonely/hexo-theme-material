@@ -326,5 +326,6 @@ menu:
     archives: /archives
     tags: /tags
 
-
+comment_like:
+    host: http://123.207.136.97:3001
 

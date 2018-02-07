@@ -1,12 +1,60 @@
 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     <% if(theme.scheme === 'Paradox') { %>
         <%- page.content %>
+        <!-- 增加点赞功能 by hatlonely -->
+        <div id="post-dolike" islike="false"><i id="post-dolike-thumb" class="material-icons">thumb_up</i></div>
+        <script>
+            $(document).ready(function() {
+                $.ajax({
+                    url: "<%= theme.comment_like.host %>/api/showlike",
+                    data: {
+                        title: "<%= page.title %>"
+                    },
+                    type: 'GET',
+                    dataType: 'JSON',
+                    success: function(res) {
+                        if (res.islike) {
+                            $('#post-dolike-thumb').css('color','#c4291c')
+                            $('#post-dolike-thumb').prop('islike', true)
+                        } else {
+                            $('#post-dolike-thumb').css("color","#758591");
+                            $('#post-dolike-thumb').prop('islike', false)
+                        }
+                    },
+                    async: true
+                });
+
+                $('#post-dolike-thumb').click(function() {
+                    if ($('#post-dolike-thumb').prop('islike')) {
+                        url = "<%= theme.comment_like.host %>/api/dounlike"
+                        $('#post-dolike-thumb').css('color', '#758591')
+                        $('#post-dolike-thumb').prop('islike', false)
+                    } else {
+                        url = "<%= theme.comment_like.host %>/api/dolike"
+                        $('#post-dolike-thumb').css('color','#c4291c')
+                        $('#post-dolike-thumb').prop('islike', true)
+                    }
+                    $.ajax({
+                        url: url,
+                        data: {
+                            title: "<%= page.title %>"
+                        },
+                        type: 'GET',
+                        dataType: 'JSON',
+                        success: function(res) {
+                        },
+                        async: true
+                    });
+                });
+            });
+        </script>
+
         <% if (page.hide_license !== true && theme.license || page.license) { %>
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
                     <p><strong>
                         <% if (page.license) { %>
                             <%- page.license %>
-                        <% } else { %> 
+                        <% } else { %>
                             <%- theme.license %>
                         <% } %></strong>
                         <br>
@@ -27,7 +75,7 @@
                     <p>
                         <% if (page.license) { %>
                             <%- page.license %>
-                        <% } else { %> 
+                        <% } else { %>
                             <%- theme.license %>
                         <% } %>
                         <br>

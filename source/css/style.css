@@ -440,6 +440,17 @@ a {
      display: none;
 }
 
+#post-dolike {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#post-dolike > i.material-icons {
+    font-size: 36px;
+    color: #758591;
+}
+
 /****************/
 /* Scheme_Paradox */
 /****************/
@@ -931,9 +942,14 @@ a {
     font-size: 13px;
     font-weight: 400;
     padding: 1pc;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: #758591;
     /*    white-space: nowrap*/
+}
+#scheme-Paradox #post_entry-right-info > i.material-icons {
+    vertical-align: middle;
+    padding-bottom: 2px;
 }
 @media screen and (max-width: 480px) {
     #scheme-Paradox #post_entry-left-info {

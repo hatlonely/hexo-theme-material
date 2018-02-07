@@ -50,7 +50,47 @@
             </div>
         </div>
         <div id="post_entry-right-info">
-          <% if (post.categories && post.categories.length) { %>
+
+            <!-- 浏览和点赞功能 by hatlonely -->
+            <i class="material-icons">remove_red_eye</i>&nbsp;
+            <span id="post-view-num-<%= idx %>">0</span>&nbsp;&nbsp;
+            <i class="material-icons">thumb_up</i>&nbsp;
+            <span id="post-like-num-<%= idx %>">0</span>&nbsp;&nbsp;
+            <script>
+                $(document).ready(function(){
+                    $.ajax({
+                        url: "<%= theme.comment_like.host %>/api/countview",
+                        data: {
+                            title: "<%= post.title %>"
+                        },
+                        type: 'GET',
+                        dataType: 'JSON',
+                        success: function(res) {
+                            if (res.count) {
+                                $('#post-view-num-<%= idx %>').text(res.count)
+                            }
+                        },
+                        async: true
+                    });
+
+                    $.ajax({
+                        url: "<%= theme.comment_like.host %>/api/countlike",
+                        data: {
+                            title: "<%= post.title %>"
+                        },
+                        type: 'GET',
+                        dataType: 'JSON',
+                        success: function(res) {
+                            if (res.count) {
+                                $('#post-like-num-<%= idx %>').text(res.count)
+                            }
+                        },
+                        async: true
+                    });
+                });
+            </script>
+
+            <% if (post.categories && post.categories.length) { %>
               <!-- Category -->
               <span class="post_entry-category">
                   <%- list_categories(post.categories, {
