@@ -4,9 +4,9 @@
 
 # Head info
 head:
-    favicon: "/img/avatar/hatlonely12.png"
-    high_res_favicon: "/img/avatar/hatlonely12.png"
-    apple_touch_icon: "/img/avatar/hatlonely12.png"
+    favicon: "/img/avatar/hatlonely11.png"
+    high_res_favicon: "/img/avatar/hatlonely11.png"
+    apple_touch_icon: "/img/avatar/hatlonely11.png"
     keywords:
     site_verification:
         google:
@@ -70,8 +70,8 @@ background:
 
 # Images Settings
 img:
-    logo: "/img/avatar/hatlonely12.png"
-    avatar: "/img/avatar/hatlonely12.png"
+    logo: "/img/avatar/hatlonely11.png"
+    avatar: "/img/avatar/hatlonely11.png"
     daily_pic: "/img/thumbnail/landscape1.jpg"
     sidebar_header: "/img/thumbnail/coco1.jpg"
     random_thumbnail: "/img/random/material-"
