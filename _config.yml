@@ -124,8 +124,9 @@ qrcode:
 prettify:
     enable: true
     # github-v2 | github | atelier-seaside-dark | tranquil-heart | tomorrow-night-eighties
-    # hemisu-dark | atelier-lakeside-dark | atelier-forest-light | atelier-savanna-light |
-    theme: "github-v2"
+    # hemisu-dark | atelier-lakeside-dark | atelier-forest-light | atelier-savanna-light
+    # sons-of-obsidian
+    theme: "sons-of-obsidian"
 
 #    Hanabi (https://github.com/egoist/hanabi)
 #        line_number: [true/false] # Show line number for code block
