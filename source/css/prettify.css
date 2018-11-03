@@ -5,7 +5,7 @@ pre {
     white-space: pre-wrap;
     word-break: break-all;
     word-wrap: break-word;
-    font-family: Menlo, Consolas, Monaco, 'SF Mono', 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-family: Menlo, Consolas, Monaco, 'SF Mono', 'Andale Mono', 'Ubuntu Mono', monospace; 
 }
 
 #post-content .prettyprint{
